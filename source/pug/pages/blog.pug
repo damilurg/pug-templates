@@ -1,0 +1,89 @@
+extends ../layouts/default-layout
+block navigation
+    li.header_navItem
+        a.header_navLink(href='approach.html') Our Approach
+    li.header_navItem
+        a.header_navLink(href='work.html') See Our Work
+    li.header_navItem
+        a.header_navLink.header_navLink_active(href='/') Our Blog
+    li.header_navItem
+        a.header_navLink.header_navLink_themeLight(href='contact.html') Contact Us
+block content
+    main
+        section.sectionBlog
+            .sectionBlog_description.section_description
+                h2.section_descriptionHeader_themeLight Our Blog
+                p
+                    | Here's where we address the burning questions. From new tech, creative inspiration and new business wins to movie reviews. It's all here in our journal.
+            hr
+            .sectionBlog_content
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 g+ notifications icon position in Chrome makes me screeaaaaam :)
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-12-17') December 17, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 Pointers on Product Development
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-12-19') August 19, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 The Art of Vulnerable Development
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-07-09') July 09, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 Project Managers - are they the evolutionary “pinkie toe” of development?
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-06-19') June 19, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 $50,000 Competition Winner - Ziteboard
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-06-06') June 06, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 A New Project Begins...
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-05-30') May 30, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 Competition Spirit
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-05-27') May 27, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 agile. With a little "a".
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-05-15') May 15, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 Sun Tzu, Modern Businessman
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-05-13') May 13, 2017
+                .sectionBlog_item
+                    a.sectionBlog_itemLink(href='blog_post.html')
+                        .sectionBlog_itemText
+                            h3 Ideas from Non-Tech Professionals
+                            p.sectionBlog_itemDate
+                                time(datetime='2017-05-01') May 01, 2017
+            .sectionBlog_navigation
+                a.sectionBlog_navigationPrevious(href='')
+                    span.sectionBlog_navigationLeft ←
+                    | Previous
+                a.sectionBlog_navigationNext(href='')
+                    | Next
+                    span.sectionBlog_navigationRight →
+        section.sectionConversation
+            h3 Want to start the conversation?
+            button.button.sectionConversation_button Contact Us

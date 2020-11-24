@@ -1,0 +1,11 @@
+extends ../base/base
+block layout
+    header.header
+        .header_menu.flex_row
+            .header_logo
+                a.header_link(href='home.html')
+            nav.header_nav
+                ul.header_navList.flex_row
+                    block navigation
+    block content
+    include ../partials/footer

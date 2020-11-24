@@ -1,0 +1,72 @@
+extends ../layouts/default-layout
+block navigation
+    li.header_navItem
+        a.header_navLink(href='approach.html') Our Approach
+    li.header_navItem
+        a.header_navLink(href='work.html') See Our Work
+    li.header_navItem
+        a.header_navLink(href='blog.html') Our Blog
+    li.header_navItem
+        a.header_navLink.header_navLink_themeLight(href='contact.html') Contact Us
+block content
+    main
+    section.sectionPost
+        .sectionPost_header
+        .sectionPost_content
+            p
+                | by
+                span.text_themeLight Cassandra Stish
+                |  on December 17, 2014
+            h2 Project Managers - are they the evolutionary “pinkie toe” of development?
+            h3
+                | First paragraph is autmatically formatted to look like a proper lead. This means that he first sentence or two will be formated like this. Read more to see all the elements and typography showcase.
+            p
+                | This is regular paragraph text. Etiam bibendum pellentesque orci, sed ornare libero iaculis quis. Morbi at felis et massa molestie vulputate vitae non urna. Phasellus augue diam, lacinia id cursus quis, ultricies non sapien. Suspendisse lobortis arcu non molestie commodo.
+            p
+                | Donec lorem est, porttitor eget elit in, molestie vehicula urna. Nam lobortis, tortor vel pellentesque ullamcorper, urna metus tempus ligula, a malesuada enim libero ut nunc. Donec varius neque quis aliquam euismod. Nam blandit mi et urna tempor, ac tincidunt nibh ullamcorper.
+            p
+                | Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus.
+                span.text_themeLight Vivamus vestibulum feugiat
+                |  sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+            blockquote.sectionPost_blockquote
+                span.text_themeLight
+                    | “Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read.” -Groucho Marx
+            p
+                | Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+            figure.sectionPost_image
+                img(src='images/blogPost_image.jpg')
+            h3 This is a subtitle
+            p
+                | Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+            h3 This is another subtitle with p text and bulletpoints
+            p
+                | Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio.
+                span.text_themeLight Sed turpis sapien
+                | , pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+            ol.sectionPost_list
+                li.sectionPost_listItem Nam metus turpis, faucibus quis
+                li.sectionPost_listItem Iaculis dignissim nisl lorem ipsum dolor
+                li.sectionPost_listItem Vestibulum eget odio ac ante ornare
+            p
+                | Nulla facilisi. Integer tortor ipsum, congue eu risus eu, interdum laoreet sapien. Aenean at consequat risus. Vivamus vestibulum feugiat sem vel eleifend. Nam et mi porta, tristique massa et, feugiat odio. Sed turpis sapien, pulvinar non placerat id, auctor at purus. Sed at rutrum elit. Phasellus molestie cursus porttitor. Proin eu adipiscing ante, sit amet tincidunt ligula.
+            h3 What about code?
+            p
+                | Nulla facilisi. Mauris magna purus, auctor id congue sit amet,
+                span.text_emphasized debugger
+                |  quis lacus. Aliquam faucibus,
+                span.text_emphasized e.dataTransfer.getData("text")
+                |  elit mauris suscipit massa, egetultrices nunc arcu at eros.
+        .sectionPost_box.flex_row
+            .sectionPost_navigation.flex_row
+                a.sectionBlog_navigationPrevious(href='')
+                    span.sectionBlog_navigationLeft ←
+                    | Previous
+                a.sectionBlog_navigationNext(href='')
+                    | Next
+                    span.sectionBlog_navigationRight →
+            .sectionPost_link.flex_row
+                a(href='') TweetThis
+                a(href='') FacebookThis
+    section.sectionConversation
+        h3 Want to start the conversation?
+        button.button.sectionConversation_button Contact Us

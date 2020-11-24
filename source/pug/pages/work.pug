@@ -1,0 +1,43 @@
+extends ../layouts/default-layout
+block navigation
+    li.header_navItem
+        a.header_navLink(href='approach.html') Our Approach
+    li.header_navItem
+        a.header_navLink.header_navLink_active(href='/') See Our Work
+    li.header_navItem
+        a.header_navLink(href='blog.html') Our Blog
+    li.header_navItem
+        a.header_navLink.header_navLink_themeLight(href='contact.html') Contact Us
+block content
+    main
+        section.sectionWork
+            .sectionWork_description.section_description
+                h2 Our Work
+                p
+                    | We have a solid track record of delivering great results - on time and on budget. Here are just a few of our recent wins..
+            .sectionWork_content.flex_row
+                .sectionWork_item.sectionWork_item_1
+                    a.sectionWork_link(href='http://www.agogo.com/' title='Agogo.com')
+                .sectionWork_item.sectionWork_item_2
+                    h3 Tendril
+                    p Individualized energy.
+                    p Personal. Relevant. Actionable.
+                .sectionWork_item.sectionWork_item_3
+                    a.sectionWork_link(href='http://www.charlottesville.org/' title='Charlottesville.org')
+                .sectionWork_item.sectionWork_item_4
+                    a.sectionWork_link(href='https://www.amuze.com/' title='Amuze.com')
+                .sectionWork_item.sectionWork_item_5
+                    a.sectionWork_link(href='' title='')
+                .sectionWork_item.sectionWork_item_6
+                    a.sectionWork_link(href='' title='')
+                .sectionWork_item.sectionWork_item_7
+                    a.sectionWork_link(href='' title='Availendar')
+                .sectionWork_item.sectionWork_item_8
+                    a.sectionWork_link(href='' title='Dining Daily')
+                .sectionWork_item.sectionWork_item_9
+                    a.sectionWork_link(href='https://www.eyepi.com/' title='Eyepi.com')
+                .sectionWork_item.sectionWork_item_10
+                    a.sectionWork_link(href='' title='PartyBook')
+        section.sectionConversation
+            h3 Want to start the conversation?
+            button.button.sectionConversation_button Contact Us

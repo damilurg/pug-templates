@@ -1,0 +1,61 @@
+extends ../layouts/default-layout
+block navigation
+    li.header_navItem
+        a.header_navLink(href='approach.html') Our Approach
+    li.header_navItem
+        a.header_navLink(href='work.html') See Our Work
+    li.header_navItem
+        a.header_navLink(href='blog.html') Our Blog
+    li.header_navItem
+        a.header_navLink.header_navLink_themeLight.header_navLink_active_themeLight(href='/') Contact Us
+block content
+    main
+        section.sectionForm
+            .sectionForm_description.section_description
+                h2 Let's Talk About You
+                p
+                    | If you think we'd be a good fit for your next project or have an idea you'd like to share with us, we'd love
+                    | to hear all about it.
+            .sectionForm_form.flex_row
+                input.sectionForm_formControl(type='text' name='name' required='' placeholder='Your Name ...' height='50')
+                input.sectionForm_formControl(type='email' name='email' required='' placeholder='Your Email ...' height='50')
+                textarea.sectionForm_formControl.sectionForm_formText(required='' name='message' placeholder='Your Message ...')
+                button.button.sectionForm_button(type='submit') Submit
+        section.sectionContact
+            h2 Contact Us
+            .sectionContact_boxMail.flex_row
+                .sectionContact_itemMail
+                    h3 General Enquiries
+                    a.sectionContact_linkMail(href='mailto:hello@daikatana.com') hello@daikatana.com
+                .sectionContact_itemMail
+                    h3 Work Enquiries
+                    a.sectionContact_linkMail(href='mailto:work@daikatana.com') work@daikatana.com
+                .sectionContact_itemMail
+                    h3 Career Enquiries
+                    a.sectionContact_linkMail(href='mailto:jobs@daikatana.com') jobs@daikatana.com
+            h2 Our Locations
+            .sectionContact_boxAddress.flex_row
+                .sectionContact_itemAddress
+                    h3 Charlottesville
+                    address.sectionContact_address
+                        | Lorem Ipsum 42 Dolor sit Amet N3
+                        | Charlottesville, VA 22902
+                .sectionContact_itemAddress
+                    h3 San Francisco
+                    address.sectionContact_address
+                        | 972 Dummy Street, 5th Floor
+                        | San Francisco, CA 94103
+                .sectionContact_itemAddress
+                    h3 Austin
+                    address.sectionContact_address
+                        | 701 Lorem Ipsum, Suite 1612 #1919
+                        | Austin, TX 78701
+        section.sectionMap
+        section.sectionMore
+            h3 Find Out More
+            .sectionMore_buttonBox.flex_row
+                button.button.sectionMore_button
+                    a(href='') Our Approach
+                p or
+                button.button.sectionMore_button
+                    a(href='') Our Work
